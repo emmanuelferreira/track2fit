@@ -33,6 +33,10 @@ gem 'devise'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'bulma-rails'
+gem 'sidekiq'
+gem 'apartment' , git: 'git@github.com:influitive/apartment.git', branch: "development"
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
