@@ -3,7 +3,7 @@ class User < ApplicationRecord
   after_destroy :delete_tenant
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, request_keys: [:subdomain]
+         :recoverable, :rememberable, request_keys: [:subdomain]
 
   has_many :workouts, dependent: :destroy
 
